@@ -1,11 +1,10 @@
 # The Gilded Rose Code Kata
 
-[![Build Status](https://travis-ci.org/plainprogrammer/gilded_rose_kata.svg?branch=master)](https://travis-ci.org/plainprogrammer/gilded_rose_kata)
 
 This is a refactoring kata, so you will be starting with a legacy
 code base.  To work this kata, clone this repo and checkout `master` before
 pulling off a new branch to begin your work. Once you have your branch ready to
-work on, run `bin/rake` or `rspec spec/` to confirm your stating point is
+work on, run `cargo test` to confirm your stating point is
 clean. As you make your refactorings, ensure you are running the test suite
 with the previously mentioned commands to ensure correctness.
 
@@ -76,7 +75,7 @@ Have a look at the Gemfile for all dependencies.
 ## Git Branches
 
 * The `master` branch contains the starting point for the kata.
-* The `solution1` branch is Jim Weirich's first solution for this kata.
+<!-- * The `solution1` branch is Jim Weirich's first solution for this kata. -->
 
 ## Changes from the original
 
@@ -90,6 +89,8 @@ following changes:
   testing the code.  Since I added a test suite, the hard coded values
   were not of much use.  I also changed the interface to accept a list of
   items as a parameter rather than a hard coded constant. (Jim Weirich)
+
+* Migrated from Ruby to Rust
 
 You can read
 [the original kata article](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/) for more details.
